@@ -1,0 +1,62 @@
+{% block content %}
+
+{% load static %}
+
+{% static "images" as baseUrl %}
+<html>
+<head>
+<section class="mbr-section mbr-section-hero mbr-section-full mbr-section-with-arrow mbr-parallax-background mbr-after-navbar" id="header1-1" data-rv-view="2" style="background-image: url('{% static 'images/done.jpg' %}');" >
+    {% if refresh %}
+    <meta http-equiv="refresh" content="1" />
+    {% endif %}
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" href="" type="image/x-icon">
+  <meta name="description" content="">
+  <title>Submitted</title>
+    {% load static %}
+  <link rel="stylesheet" href="{% static 'assets/bootstrap-material-design-font/css/material.css' %}">
+  <link rel="stylesheet" href="{% static 'assets/et-line-font-plugin/style.css' %}">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic&subset=latin">
+  <link rel="stylesheet" href="{% static 'assets/tether/tether.min.css' %}">
+  <link rel="stylesheet" href="{% static 'assets/bootstrap/css/bootstrap.min.css' %}">
+  <link rel="stylesheet" href="{% static 'assets/dropdown/css/style.css' %}">
+  <link rel="stylesheet" href="{% static 'assets/animate.css/animate.min.css' %}">
+  <link rel="stylesheet" href="{% static 'assets/theme/css/style.css' %}">
+  <link rel="stylesheet" href="{% static 'assets/mobirise/css/mbr-additional.css' %}" type="text/css">
+<style>
+div.transbox {
+  margin: 30px;
+  background-color: #ffffff;
+  border: 1px solid black;
+  opacity: 0.8;
+  filter: alpha(opacity=20); /* For IE8 and earlier */
+}
+
+div.transbox p {
+  margin: 5%;
+  font-weight: bold;
+  color: #000000;
+}
+</style>
+</head>
+<body>
+	<section style="width:90%;height:100%;margin: auto;border: 0px solid #aaf ;">	
+	<br/>
+	<button type="button" class=" " >
+	<a class ="xyz" href = "/" style="color: black"><h5>HOME</h5></a>
+	</button>
+	<center>
+		<br/><br/><br/><br/><br/><br/>
+	<div class="transbox" style=" width:65%;height:15%;margin: auto;border: 4px solid #fff ;">
+	<h1><b>Application submitted successfully!! Wish you good luck...</b></h1></div>
+	</center>
+	
+</section>
+</body>
+</html>
+{% endblock %}

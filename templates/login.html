@@ -1,0 +1,87 @@
+{% block content %}
+
+{% load static %}
+
+{% static "images" as baseUrl %}
+<html>
+<head>
+<section class="mbr-section mbr-section-hero mbr-section-full mbr-section-with-arrow mbr-parallax-background mbr-after-navbar" id="header1-1" data-rv-view="2" style="background-image: url('{% static 'images/recruit.jpg' %}');" >
+
+    {% if refresh %}
+    <meta http-equiv="refresh" content="1" />
+    {% endif %}
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" href="" type="image/x-icon">
+  <meta name="description" content="">
+  <title>Student Registration</title>
+    {% load static %}
+  <link rel="stylesheet" href="{% static 'assets/bootstrap-material-design-font/css/material.css' %}">
+  <link rel="stylesheet" href="{% static 'assets/et-line-font-plugin/style.css' %}">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic&subset=latin">
+  <link rel="stylesheet" href="{% static 'assets/tether/tether.min.css' %}">
+  <link rel="stylesheet" href="{% static 'assets/bootstrap/css/bootstrap.min.css' %}">
+  <link rel="stylesheet" href="{% static 'assets/dropdown/css/style.css' %}">
+  <link rel="stylesheet" href="{% static 'assets/animate.css/animate.min.css' %}">
+  <link rel="stylesheet" href="{% static 'assets/theme/css/style.css' %}">
+  <link rel="stylesheet" href="{% static 'assets/mobirise/css/mbr-additional.css' %}" type="text/css">
+<style>
+div.transbox {
+  margin: 30px;
+  background-color: #ffffff;
+  border: 1px solid black;
+  opacity: 0.8;
+  filter: alpha(opacity=60); /* For IE8 and earlier */
+}
+
+div.transbox p {
+  margin: 5%;
+  font-weight: bold;
+  color: #000000;
+}
+</style>
+</head>
+
+<body>
+<br/><br/>
+  <button type="button" class=" " >
+  <a class ="xyz" href = "/" style="color: black"><h5>HOME</h5></a>
+  </button>
+
+<br/><br/><br/><br/><br/><br/>
+
+<centre>
+ 
+  <div class="transbox" style=" width:40%;height:40%;margin: auto;border: 4px solid #fff ;">
+
+    <div  class="" id="header1-1" data-rv-view="4" style="width:86%; height: 60%;margin: auto;border: 5px solid #fff;">
+
+    <form role="form" action=" {% url 'marks' %}" method="post">
+
+    {% csrf_token %}
+    <br/><font color = 'black' size='5'><b>
+      <div class="icon1"><label class="col-md-12">Username:
+        <input type="username" name="username" value = "{{ username }}" placeholder="Enter your username" >
+      </div></label><br/><br/>
+      <div class="icon1"><label class="col-md-12">Password:
+        <input type="password"  name="password" value = "{{ password }}" placeholder="Password"/>
+      </div></label>
+      <div class="row-md-12">
+      <div class="col-md-12">
+      <b/><font size ='2' color = 'red'>{{ html }}</font></div>
+       </div></div><br/>
+      <label class="col-md-4 control-label" for="submit"></label>
+      <div class="col-md-6">
+        <input type="submit" value="Log in"><br/>
+      </div></font>
+
+  </form>
+</centre><br/><br/>
+</body>
+
+</html>
+{% endblock %}

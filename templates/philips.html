@@ -1,0 +1,69 @@
+
+
+
+{% block content %}
+
+{% load static %}
+
+{% static "images" as baseUrl %}
+<html>
+<head>
+<section class="mbr-section mbr-section-hero mbr-section-full mbr-section-with-arrow mbr-parallax-background mbr-after-navbar" id="header1-1" data-rv-view="2" style="background-image: url('{% static 'images/h.jpg' %}');" >
+    {% if refresh %}
+    <meta http-equiv="refresh" content="1" />
+    {% endif %}
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" href="" type="image/x-icon">
+  <meta name="description" content="">
+  <title>PHILIPS: Apply</title>
+    {% load static %}
+  <link rel="stylesheet" href="{% static 'assets/bootstrap-material-design-font/css/material.css' %}">
+  <link rel="stylesheet" href="{% static 'assets/et-line-font-plugin/style.css' %}">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic&subset=latin">
+  <link rel="stylesheet" href="{% static 'assets/tether/tether.min.css' %}">
+  <link rel="stylesheet" href="{% static 'assets/bootstrap/css/bootstrap.min.css' %}">
+  <link rel="stylesheet" href="{% static 'assets/dropdown/css/style.css' %}">
+  <link rel="stylesheet" href="{% static 'assets/animate.css/animate.min.css' %}">
+  <link rel="stylesheet" href="{% static 'assets/theme/css/style.css' %}">
+  <link rel="stylesheet" href="{% static 'assets/mobirise/css/mbr-additional.css' %}" type="text/css">
+
+</head>
+
+<body><br/>
+
+  <button type="button" class=" " >
+  <a class ="xyz" href = {% url "companies"  %} style="color: black"><h5>BACK</h5></a>
+  </button>
+<center>
+<legend><font size="8"><font color="white"><b>REQUIREMENTS</b></legend></font></font><br/></legend></centre>
+
+<section class="mbr-section mbr-section-hero mbr-section-full mbr-section-with-arrow mbr-parallax-background mbr-after-navbar" id="header1-1" data-rv-view="2" style="background-image: url('{% static 'images/ph.jpg' %}'); width:65%;height:50%;margin: auto;border: 5px solid #fff ;">	
+<!-- Form Name -->
+<br/>
+
+<section class="mbr-section mbr-section-hero mbr-section-full mbr-section-with-arrow mbr-parallax-background mbr-after-navbar" id="header1-1" data-rv-view="2" style="width:90%;height:60%;margin: auto;border: 0px solid #aaf ;">	
+<font size = '4' color = 'white'>
+	<fieldset>
+			<div class="row-md-12">
+			  	<div class="col-md-4">
+
+					<b>Qualification:</b> B.E (Computer Science, Information Science, E&C)<br/>
+					<b>Grades:</b> 65% <br/>
+					<b>Skills:</b> C++, Python, Java, C# (any 2)<br/>
+					<b>Work Experience:</b> 0-1 years<br/>
+					<b>Locations:</b> Chennai, Bangalore, Hyderabad<br/><br/>
+
+
+		  </div><br/>
+		</div><br/>
+  </font>		
+</fieldset>
+</body>
+</section>
+</html>
+{% endblock %}
