@@ -22,5 +22,5 @@ Student Placement Predictor is a system which predicts student placement status 
       -nuget
       
       
-**Command to run the code**
+**Command to run the code:**
       python3 manage.py runserver
